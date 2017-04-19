@@ -523,14 +523,17 @@ Aui.ready( function()
 
 
 var imgOne=jQuery('#imgOne')
-
+var imgTwo=jQuery("#imgTwo")
+var imgThree=jQuery('#imgThree')
 var o=0.1
 
     var time=setInterval(function(){
         if(imgOne.css('opacity')<1){
-            console.log(1)
+
             o+=0.1
             imgOne.css('opacity',o)
+            imgTwo.css('opacity',o)
+            imgThree.css('opacity',o)
         }
         else if(imgOne.css('opacity')>=1){
             clearInterval(time)
